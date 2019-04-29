@@ -1,0 +1,5 @@
+swiftmailer:
+    transport: gmail
+    host:      ~
+    username:  ajjambor912@gmail.com
+    password:  1Kurwa2Kurwa3Kurwa
