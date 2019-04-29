@@ -20,15 +20,44 @@ class SecurityController extends BaseController {
     public function registerUser(UserRepository $userRepository){
         $user = new User();
         $postData = $this->getJSONContent();
-        $user->setEmail($postData['email'])
-            ->setNick($postData['nick'])
-            ->setRating(0);
-        $user = $userRepository->registerUser($user, array('ROLE_USER'), $postData['plainPassword']);
+        try {
+            $user->setEmail($postData['email'])
+                ->setNick($postData['nick'])
+                ->setRating(0);
+            $user = $userRepository->registerUser($user, array('ROLE_USER'), $postData['plainPassword']);
 
-        $this->sendRegisterMessage($user);
+            //$this->sendRegisterMessage($user);
+            return new JsonResponse(['status' => 'ok'], 200);
+        }
+        catch (\Exception $e){
+            dump($e);die;
+            return new JsonResponse(['status'=>false, 'error'=>'exists'],500);
+        }
+    }
 
-
-        return new JsonResponse(['status'=>'ok'],200);
+    /**
+     * @Route("/check-email", methods="POST")
+     */
+    public function checkEmail(UserRepository $userRepository){
+        $postData = $this->getJSONContent();
+        $user = $userRepository->findOneBy(['email'=>$postData['email']]);
+        if($user){
+            return new JsonResponse(['status'=>false], 200);
+        }else{
+            return new JsonResponse(['status' => true],200);
+        }
+    }
+    /**
+     * @Route("/check-nick", methods="POST")
+     */
+    public function checkNick(UserRepository $userRepository){
+        $postData = $this->getJSONContent();
+        $user = $userRepository->findOneBy(['nick'=>$postData['nick']]);
+        if($user){
+            return new JsonResponse(['status'=>false], 200);
+        }else{
+            return new JsonResponse(['status' => true],200);
+        }
     }
     /**
      * @Route("/login",methods="POST")
