@@ -1671,6 +1671,6 @@ class __TwigTemplate_40c14bb87a9e653c5e5403ff12e6058d4174a347eecee18628f59847cf6
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/home/adam/rapowo.pl/backend/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }

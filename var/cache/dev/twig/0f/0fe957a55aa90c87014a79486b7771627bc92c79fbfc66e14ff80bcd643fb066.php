@@ -69,6 +69,6 @@ class __TwigTemplate_50ff6066b966ff1ea989efe048938335f70262da837a74154105a8e1a32
     <?php if (strlen(\$value) > 0): ?> value=\"<?php echo \$view->escape(\$value) ?>\"<?php endif ?>
     <?php if (\$checked): ?> checked=\"checked\"<?php endif ?>
 />
-", "@Framework/Form/checkbox_widget.html.php", "/home/adam/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
+", "@Framework/Form/checkbox_widget.html.php", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/checkbox_widget.html.php");
     }
 }

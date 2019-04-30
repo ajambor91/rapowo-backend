@@ -93,6 +93,6 @@ class __TwigTemplate_af4be7adc55ca981044b9da1a44b2204f889b8f8e0bb109a26527b83132
             </trace>
 {% endfor %}
         </traces>
-", "@Twig/Exception/traces.xml.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
+", "@Twig/Exception/traces.xml.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/traces.xml.twig");
     }
 }

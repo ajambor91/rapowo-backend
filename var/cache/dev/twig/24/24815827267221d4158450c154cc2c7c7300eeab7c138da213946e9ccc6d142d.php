@@ -102,6 +102,6 @@ class __TwigTemplate_62ca8cac6281fa833e337d0ed0e91b7341ec0a67a0369ac321680b66ed1
   {{ include('@Twig/Exception/trace.txt.twig', { trace: trace }, with_context = false) }}
 {% endfor %}
 {% endif %}
-", "@Twig/Exception/traces.txt.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/traces.txt.twig");
+", "@Twig/Exception/traces.txt.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/traces.txt.twig");
     }
 }

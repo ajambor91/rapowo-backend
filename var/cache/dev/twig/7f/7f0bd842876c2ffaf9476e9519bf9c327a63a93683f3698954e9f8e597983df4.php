@@ -67,6 +67,6 @@ class __TwigTemplate_b5994ddbdee5e99e4611c25cff176dd385fcf1e853d807d4a7661831da8
     public function getSourceContext()
     {
         return new Source("{{ include('@Twig/Exception/exception.xml.twig', { exception: exception }) }}
-", "@Twig/Exception/exception.atom.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/exception.atom.twig");
+", "@Twig/Exception/exception.atom.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/exception.atom.twig");
     }
 }

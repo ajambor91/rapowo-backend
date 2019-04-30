@@ -73,6 +73,6 @@ class __TwigTemplate_7fdc857d81076142d24fd9978a4b2f21266506cc40e0e0530b806251d1e
     <?php echo \$view['form']->block(\$form, 'form_rows') ?>
     <?php echo \$view['form']->rest(\$form) ?>
 </div>
-", "@Framework/Form/form_widget_compound.html.php", "/home/adam/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/form_widget_compound.html.php");
+", "@Framework/Form/form_widget_compound.html.php", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/form_widget_compound.html.php");
     }
 }

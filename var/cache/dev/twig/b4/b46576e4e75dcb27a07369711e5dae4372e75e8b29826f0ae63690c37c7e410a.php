@@ -73,6 +73,6 @@ class __TwigTemplate_2e231ab3da96bc4716517e5d38053b97368736d94ba2e60bd842ab878a6
         return new Source("/*
 {{ include('@Twig/Exception/exception.txt.twig', { exception: exception }) }}
 */
-", "@Twig/Exception/exception.js.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/exception.js.twig");
+", "@Twig/Exception/exception.js.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/exception.js.twig");
     }
 }

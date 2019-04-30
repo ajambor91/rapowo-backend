@@ -67,6 +67,6 @@ class __TwigTemplate_6225381a82f58a8387faca14e0bded08a7631c4a82af8f4f0480568543c
     public function getSourceContext()
     {
         return new Source("{{ { 'error': { 'code': status_code, 'message': status_text } }|json_encode|raw }}
-", "@Twig/Exception/error.json.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/error.json.twig");
+", "@Twig/Exception/error.json.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/error.json.twig");
     }
 }

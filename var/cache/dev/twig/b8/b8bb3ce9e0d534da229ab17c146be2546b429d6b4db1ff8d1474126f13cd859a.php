@@ -260,6 +260,6 @@ class __TwigTemplate_276b6231f1bbdc1262c6134237e1e022ad922477f34f1810add5ae15b57
         {{- form_rest(form) -}}
     </table>
 {%- endblock form_widget_compound -%}
-", "form_table_layout.html.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/twig-bridge/Resources/views/Form/form_table_layout.html.twig");
+", "form_table_layout.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/twig-bridge/Resources/views/Form/form_table_layout.html.twig");
     }
 }

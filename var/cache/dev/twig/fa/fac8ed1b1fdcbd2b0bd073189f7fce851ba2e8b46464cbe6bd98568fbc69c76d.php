@@ -81,6 +81,6 @@ class __TwigTemplate_fc5a017fb2a64afe6967784c58fdd822f6b5ac73467b0c9e43c7208578e
         <?php echo \$view['form']->help(\$form); ?>
     </td>
 </tr>
-", "@Framework/FormTable/form_row.html.php", "/home/adam/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/FormTable/form_row.html.php");
+", "@Framework/FormTable/form_row.html.php", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/FormTable/form_row.html.php");
     }
 }

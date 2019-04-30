@@ -150,6 +150,6 @@ class __TwigTemplate_111ac9ff1b96b92223d96a5e5ed4b1fdd68455055065a1cd5a5125affbf
 {% block panel %}
     {{ render(path('_profiler_router', { token: token })) }}
 {% endblock %}
-", "@WebProfiler/Collector/router.html.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
+", "@WebProfiler/Collector/router.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
     }
 }

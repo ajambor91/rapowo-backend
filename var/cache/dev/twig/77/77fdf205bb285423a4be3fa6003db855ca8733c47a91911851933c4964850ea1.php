@@ -174,6 +174,6 @@ class __TwigTemplate_af6bfdf96a0dea25e2d7ddbb35649834423b0e1e0e2c194e9455ca0bda7
         </tr>
     </tbody>
 </table>
-", "@Twig/Exception/traces_text.html.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
+", "@Twig/Exception/traces_text.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/traces_text.html.twig");
     }
 }

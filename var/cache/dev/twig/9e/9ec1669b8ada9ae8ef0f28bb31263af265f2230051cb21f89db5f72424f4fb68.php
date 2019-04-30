@@ -61,6 +61,6 @@ class __TwigTemplate_36387a1b227fb6a16f78cab402ae5d7408328798b6f78376712a4ddba23
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->block(\$form, 'form_widget_simple', ['type' => isset(\$type) ? \$type : 'password']) ?>
-", "@Framework/Form/password_widget.html.php", "/home/adam/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/password_widget.html.php");
+", "@Framework/Form/password_widget.html.php", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/password_widget.html.php");
     }
 }

@@ -23,6 +23,9 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             '/api/texts/add-text' => [[['_route' => 'app_apiclose_texts_addtext', '_controller' => 'App\\Controller\\ApiClose\\TextsController::addText'], null, ['POST' => 0], null, false, false, null]],
             '/texts/get' => [[['_route' => 'app_apiopen_texts_gettexts', '_controller' => 'App\\Controller\\ApiOpen\\TextsController::getTexts'], null, null, null, false, false, null]],
             '/security/register' => [[['_route' => 'app_security_security_registeruser', '_controller' => 'App\\Controller\\Security\\SecurityController::registerUser'], null, ['POST' => 0], null, false, false, null]],
+            '/security/check-email' => [[['_route' => 'app_security_security_checkemail', '_controller' => 'App\\Controller\\Security\\SecurityController::checkEmail'], null, ['POST' => 0], null, false, false, null]],
+            '/security/check-nick' => [[['_route' => 'app_security_security_checknick', '_controller' => 'App\\Controller\\Security\\SecurityController::checkNick'], null, ['POST' => 0], null, false, false, null]],
+            '/security/check-password' => [[['_route' => 'app_security_security_checkpassword', '_controller' => 'App\\Controller\\Security\\SecurityController::checkPassword'], null, ['POST' => 0], null, false, false, null]],
             '/security/login' => [[['_route' => 'app_security_security_login', '_controller' => 'App\\Controller\\Security\\SecurityController::login'], null, ['POST' => 0], null, false, false, null]],
             '/security/password-recover' => [[['_route' => 'app_security_security_recoverpassword', '_controller' => 'App\\Controller\\Security\\SecurityController::recoverPassword'], null, ['POST' => 0], null, false, false, null]],
         ];

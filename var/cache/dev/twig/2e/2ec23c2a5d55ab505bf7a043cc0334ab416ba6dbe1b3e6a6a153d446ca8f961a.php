@@ -106,6 +106,6 @@ class __TwigTemplate_4284496de2a52177d1b5f122a2fb79ec377b6f5d7011aea31d109f17a6f
     </exception>
 {% endfor %}
 </error>
-", "@Twig/Exception/exception.xml.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/exception.xml.twig");
+", "@Twig/Exception/exception.xml.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/exception.xml.twig");
     }
 }

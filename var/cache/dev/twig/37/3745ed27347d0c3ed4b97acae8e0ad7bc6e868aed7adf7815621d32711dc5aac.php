@@ -169,6 +169,6 @@ class __TwigTemplate_9b70c83445cb74a46988238178079763f71ada690b15a7bad21f0ba79e8
         {%- endfor -%}
     </pre>
 {% endif %}
-", "@Doctrine/Collector/explain.html.twig", "/home/adam/rapowo.pl/backend/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
+", "@Doctrine/Collector/explain.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig");
     }
 }

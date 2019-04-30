@@ -78,6 +78,6 @@ class __TwigTemplate_d2f1760223ad4fdc22ddb3e67e1f2fb04753bcc8c8075b69c01ed6ba1c1
 <h1>Witaj {{ name }}</h1>
 <p>Aby aktywować konto naciśnij poniższy link <a src=\"{{ path('activation',{'hash':hash}) }}\"></a></p>
 </body>
-", "emails/registration.html.twig", "/home/adam/rapowo.pl/backend/templates/emails/registration.html.twig");
+", "emails/registration.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/templates/emails/registration.html.twig");
     }
 }

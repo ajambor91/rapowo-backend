@@ -1004,6 +1004,6 @@ class __TwigTemplate_81112c7cf99da689422098ca45cfa459b53f2fdad542acd9eac9454da53
         {% endif %}
     {% endfor %}
 {% endblock %}
-", "@Swiftmailer/Collector/swiftmailer.html.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
+", "@Swiftmailer/Collector/swiftmailer.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig");
     }
 }

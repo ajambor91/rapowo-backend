@@ -65,6 +65,6 @@ class __TwigTemplate_099559b665937ec0b233b6c637af0b37f1d42aa8eabe42395e93558532d
         return new Source("<div>
     <?php echo \$view['form']->widget(\$form) ?>
 </div>
-", "@Framework/Form/button_row.html.php", "/home/adam/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/button_row.html.php");
+", "@Framework/Form/button_row.html.php", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/button_row.html.php");
     }
 }

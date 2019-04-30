@@ -18,22 +18,22 @@ class SecurityController extends BaseController {
      * @Route("/register",methods="POST")
      */
     public function registerUser(UserRepository $userRepository){
-        dump($this->getJSONContent());die;
-//        $user = new User();
-//        $postData = $this->getJSONContent();
-//        try {
-//            $user->setEmail($postData['email'])
-//                ->setNick($postData['nick'])
-//                ->setRating(0);
-//            $user = $userRepository->registerUser($user, array('ROLE_USER'), $postData['plainPassword']);
-//
-//            //$this->sendRegisterMessage($user);
-//            return new JsonResponse(['status' => 'ok'], 200);
-//        }
-//        catch (\Exception $e){
-//            dump($e);die;
-//            return new JsonResponse(['status'=>false, 'error'=>'exists'],500);
-//        }
+
+        $user = new User();
+        $postData = $this->getJSONContent();
+        try {
+            $user->setEmail($postData['email'])
+                ->setNick($postData['nick'])
+                ->setRating(0);
+            $user = $userRepository->registerUser($user, array('ROLE_USER'), $postData['plainPassword']);
+
+            //$this->sendRegisterMessage($user);
+            return new JsonResponse(['status' => 'ok'], 200);
+        }
+        catch (\Exception $e){
+            dump($e);die;
+            return new JsonResponse(['status'=>false, 'error'=>'exists'],500);
+        }
     }
 
     /**
@@ -55,6 +55,19 @@ class SecurityController extends BaseController {
         $postData = $this->getJSONContent();
         $user = $userRepository->findOneBy(['nick'=>$postData['nick']]);
         if($user){
+            return new JsonResponse(['status'=>false], 200);
+        }else{
+            return new JsonResponse(['status' => true],200);
+        }
+    }
+    /**
+     * @Route("/check-password", methods="POST")
+     */
+    public function checkPassword(){
+        $postData = $this->getJSONContent();
+        $pattern = '(?i)^(?=.*[a-z])(?=.*\d).{6,}$';
+        $success = preg_match($pattern, $postData['plainPassword'] );
+        if($success){
             return new JsonResponse(['status'=>false], 200);
         }else{
             return new JsonResponse(['status' => true],200);

@@ -477,6 +477,6 @@ class __TwigTemplate_5b9627e88e6508fa0b09a570a86b5afb073b905fc0b4835715eddce46fc
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/web-profiler-bundle/Resources/views/Collector/events.html.twig");
     }
 }

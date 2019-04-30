@@ -415,6 +415,6 @@ class __TwigTemplate_2e8804faea097d2440519eeb7ac4240cad67613f8e21ef167983b63ed00
     });
 })();
 </script>
-", "@WebProfiler/Profiler/settings.html.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
+", "@WebProfiler/Profiler/settings.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/settings.html.twig");
     }
 }

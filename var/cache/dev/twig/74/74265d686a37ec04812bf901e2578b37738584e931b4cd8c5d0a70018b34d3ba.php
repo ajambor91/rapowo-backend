@@ -57,6 +57,6 @@ class __TwigTemplate_e042882a5b4e122b4b48f94f4df31a711f3b0bf6226b50ac2f51d7139cf
 
     public function getSourceContext()
     {
-        return new Source("", "@Framework/Form/button_label.html.php", "/home/adam/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/button_label.html.php");
+        return new Source("", "@Framework/Form/button_label.html.php", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/button_label.html.php");
     }
 }

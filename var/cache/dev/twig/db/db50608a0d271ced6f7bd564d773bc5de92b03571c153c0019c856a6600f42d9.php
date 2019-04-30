@@ -167,6 +167,6 @@ class __TwigTemplate_3c74009b67777be657286a5a1608fff74a0f0500181163a06b9c576dabe
         {% block javascripts %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/home/adam/rapowo.pl/backend/templates/base.html.twig");
+", "base.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/templates/base.html.twig");
     }
 }

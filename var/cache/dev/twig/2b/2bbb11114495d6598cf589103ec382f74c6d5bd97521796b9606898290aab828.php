@@ -202,6 +202,6 @@ class __TwigTemplate_9a26dc431a8e4fa41694927b7c3dcb19666906431ac417619b9cd53359a
         })|raw }}
     </div>
 {% endif %}
-", "@Twig/Exception/trace.html.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
+", "@Twig/Exception/trace.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/Exception/trace.html.twig");
     }
 }

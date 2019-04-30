@@ -61,6 +61,6 @@ class __TwigTemplate_34e937a7aa1e543d67463857be3170da43096cc8be8c8e44cb684e80e1d
     public function getSourceContext()
     {
         return new Source("<?php echo \$view['form']->block(\$form, 'form_rows') ?>
-", "@Framework/Form/repeated_row.html.php", "/home/adam/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/repeated_row.html.php");
+", "@Framework/Form/repeated_row.html.php", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/framework-bundle/Resources/views/Form/repeated_row.html.php");
     }
 }

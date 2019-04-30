@@ -222,6 +222,6 @@ class __TwigTemplate_68d45303d432b560814226e7d44a13375d6ee8dcc1ab0dc64fc2ca53287
         {{ include('@Twig/base_js.html.twig') }}
     </body>
 </html>
-", "@Twig/layout.html.twig", "/home/adam/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
+", "@Twig/layout.html.twig", "/home/creative/Dokumenty/rapowo.pl/backend/vendor/symfony/twig-bundle/Resources/views/layout.html.twig");
     }
 }
