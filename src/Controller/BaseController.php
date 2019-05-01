@@ -1,6 +1,7 @@
 <?php
 namespace App\Controller;
 use App\Entity\User;
+use App\Repository\UserRepository;
 use Lexik\Bundle\JWTAuthenticationBundle\Encoder\JWTEncoderInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -41,7 +42,23 @@ class BaseController extends Controller {
             ->findOneBy(['email' => $decodedToken['username']]);
         return $userFromDatabase;
     }
-    protected function handleFile($file,$type){
+
+    /**
+     * @param $encodedImage
+     * @param $email
+     * @param UserRepository $userRepository
+     */
+    protected function handleFile($encodedImage, $email, UserRepository $userRepository){
+        $userDirName = $userRepository->getDirectoryFromEmail($email);
+        $fileName = md5($email);
+        mkdir('uploads/'.$userDirName,0777,true);
+        $encodedImage = explode(',',$encodedImage)[1];
+        chdir('uploads/'.$userDirName);
+        $file = fopen($fileName,'w');
+        fwrite($file,base64_decode($encodedImage));
+        fclose($file);
+        return 'uploads/'.$userDirName.'/'.$fileName;
+
 
     }
 }

@@ -4,6 +4,8 @@ namespace App\Controller\Security;
 
 use App\Controller\BaseController;
 use App\Entity\User;
+use App\Entity\UserImage;
+use App\Entity\UserImages;
 use App\Repository\UserRepository;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,16 +20,23 @@ class SecurityController extends BaseController {
      * @Route("/register",methods="POST")
      */
     public function registerUser(UserRepository $userRepository){
-
         $user = new User();
         $postData = $this->getJSONContent();
         try {
+            $imagePath = $this->handleFile($postData['image'],$postData['email'], $userRepository);
+            $image = new UserImage();
+            $image->setPath($imagePath)
+                    ->setUser($user);
+
             $user->setEmail($postData['email'])
                 ->setNick($postData['nick'])
-                ->setRating(0);
+                ->setRating(0)
+                ->addUserImage($image);
+
             $user = $userRepository->registerUser($user, array('ROLE_USER'), $postData['plainPassword']);
 
             //$this->sendRegisterMessage($user);
+
             return new JsonResponse(['status' => 'ok'], 200);
         }
         catch (\Exception $e){
@@ -43,7 +52,7 @@ class SecurityController extends BaseController {
         $postData = $this->getJSONContent();
         $user = $userRepository->findOneBy(['email'=>$postData['email']]);
         if($user){
-            return new JsonResponse(['status'=>false], 200);
+            return new JsonResponse(['status'=>false, 'error'=>"Email jest już zajęty!"], 200);
         }else{
             return new JsonResponse(['status' => true],200);
         }
@@ -55,9 +64,9 @@ class SecurityController extends BaseController {
         $postData = $this->getJSONContent();
         $user = $userRepository->findOneBy(['nick'=>$postData['nick']]);
         if($user){
-            return new JsonResponse(['status'=>false], 200);
+            return new JsonResponse(['status'=>false, 'error' => 'Nick został już wykorzystany!'], 200);
         }else{
-            return new JsonResponse(['status' => true],200);
+            return new JsonResponse(['status' => true,'errors'],200);
         }
     }
     /**

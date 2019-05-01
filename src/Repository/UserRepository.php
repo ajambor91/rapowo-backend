@@ -92,4 +92,8 @@ class UserRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function getDirectoryFromEmail($email){
+        return explode('@',$email)[0];
+    }
 }
+

@@ -102,15 +102,22 @@ class User implements UserInterface
      */
     private $firstTime;
 
-    /**
-     * @ORM\Column(type="string", length=255,nullable=true)
-     */
-    private $image;
+
 
     /**
      * @ORM\Column(type="string", length=255)
      */
     private $nick;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\UserImage", mappedBy="user", orphanRemoval=true, cascade={"persist"})
+     */
+    private $userImages;
+
+
+
+
+
 
 
 
@@ -121,6 +128,9 @@ class User implements UserInterface
         $this->friends = new ArrayCollection();
         $this->texts = new ArrayCollection();
         $this->comments = new ArrayCollection();
+        $this->no = new ArrayCollection();
+        $this->userImages = new ArrayCollection();
+        $this->image = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -400,17 +410,7 @@ class User implements UserInterface
         return $this;
     }
 
-    public function getImage(): ?string
-    {
-        return $this->image;
-    }
 
-    public function setImage(string $image): self
-    {
-        $this->image = $image;
-
-        return $this;
-    }
 
     public function getNick(): ?string
     {
@@ -423,6 +423,43 @@ class User implements UserInterface
 
         return $this;
     }
+
+    /**
+     * @return Collection|UserImage[]
+     */
+    public function getUserImages(): Collection
+    {
+        return $this->userImages;
+    }
+
+    public function addUserImage(UserImage $userImage): self
+    {
+        if (!$this->userImages->contains($userImage)) {
+            $this->userImages[] = $userImage;
+            $userImage->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUserImage(UserImage $userImage): self
+    {
+        if ($this->userImages->contains($userImage)) {
+            $this->userImages->removeElement($userImage);
+            // set the owning side to null (unless already changed)
+            if ($userImage->getUser() === $this) {
+                $userImage->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+
+
+
+
+
 
 
 
