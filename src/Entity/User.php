@@ -114,6 +114,11 @@ class User implements UserInterface
      */
     private $userImages;
 
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\UserImage", cascade={"persist", "remove"})
+     */
+    private $avatar;
+
 
 
 
@@ -451,6 +456,18 @@ class User implements UserInterface
                 $userImage->setUser(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getAvatar(): ?UserImage
+    {
+        return $this->avatar;
+    }
+
+    public function setAvatar(?UserImage $avatar): self
+    {
+        $this->avatar = $avatar;
 
         return $this;
     }

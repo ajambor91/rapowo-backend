@@ -27,10 +27,7 @@ class UserImage
      */
     private $path;
 
-    /**
-     * @ORM\Column(type="boolean")
-     */
-    private $avatar;
+
 
     public function getId(): ?int
     {
@@ -61,15 +58,5 @@ class UserImage
         return $this;
     }
 
-    public function getAvatar(): ?bool
-    {
-        return $this->avatar;
-    }
 
-    public function setAvatar(bool $avatar): self
-    {
-        $this->avatar = $avatar;
-
-        return $this;
-    }
 }

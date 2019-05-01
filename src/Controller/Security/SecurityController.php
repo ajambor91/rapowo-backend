@@ -31,7 +31,8 @@ class SecurityController extends BaseController {
             $user->setEmail($postData['email'])
                 ->setNick($postData['nick'])
                 ->setRating(0)
-                ->addUserImage($image);
+                ->addUserImage($image)
+                ->setAvatar($image);
 
             $user = $userRepository->registerUser($user, array('ROLE_USER'), $postData['plainPassword']);
 
