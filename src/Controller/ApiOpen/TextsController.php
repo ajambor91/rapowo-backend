@@ -24,6 +24,8 @@ class TextsController extends BaseController{
         $texts = $textsRepository->findAll();
         $dataArray =[];
         foreach ($texts as $text){
+            $rating = $text->getRating();
+            $ratingClass = ($rating >= 0 ? 'aboveZero' : 'underZero');
             $data = [];
             $author = $text->getAuthor();
             $data['id'] = $text->getId();
@@ -31,7 +33,8 @@ class TextsController extends BaseController{
             $data['content'] = $text->getContent();
             $data['created_at'] = $text->getCreatedAt();
             $data['updated_at'] = $text->getUpdatedAt();
-            $data['rating'] = $text->getRating();
+            $data['rating']['note'] = $rating;
+            $data['rating']['class'] = $ratingClass;
             $data['author']['id'] = $author->getId();
             $data['author']['nick'] = $author->getNick();
             $data['author']['image'] = $author->getCity();

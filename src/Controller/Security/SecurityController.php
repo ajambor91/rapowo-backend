@@ -97,8 +97,12 @@ class SecurityController extends BaseController {
 
         if ($passwordEncoder->isPasswordValid($userFromDatabase, $postData['plainPassword'])) {
             $token = $this->jwtAuth->encode(['username' => $postData['email'], 'exp' => time() + 604800]);
-            dump($userFromDatabase);die;
-            return new JsonResponse(['status' => true, 'token' => $token, 'user' => json_encode($userFromDatabase)]);
+
+            return new JsonResponse(['status' => true, 'token' => $token, 'user' => [
+                'id' =>$userFromDatabase->getId(),
+                'nick'=>$userFromDatabase->getNick(),
+                'email'=>$userFromDatabase->getEmail()
+            ]]);
 
         } else {
             return new JsonResponse(['status' => false, 'message' => 'wrong_email_or_password'], 401);
